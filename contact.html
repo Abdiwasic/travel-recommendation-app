@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Wanderlust</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header>
+    <nav id="navbar">
+      <a href="index.html" class="logo">Wanderlust</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <div class="search-wrap">
+        <input type="text" id="search-input" placeholder="Search beaches, temples, countries…" />
+        <button id="search-btn" onclick="window.location.href='index.html'">Search</button>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>Got a question, tip, or correction? We'd love to hear from you.</p>
+  </section>
+
+  <!-- ── CONTACT FORM ── -->
+  <section class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p>Whether you spotted an error in one of our guides, want to contribute a destination, or just want to say hello — drop us a message.</p>
+        <ul class="contact-details">
+          <li><strong>Email:</strong> hello@wanderlust-travel.com</li>
+          <li><strong>Response time:</strong> Within 2 business days</li>
+          <li><strong>Based in:</strong> Multiple time zones (we travel a lot)</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" onsubmit="submitContact(event)">
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+        </div>
+        <div class="form-group full">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind…" required></textarea>
+        </div>
+        <div class="form-group full">
+          <button type="submit" class="btn-primary">Send message</button>
+        </div>
+        <div id="contact-success" class="success-msg hidden">
+          ✅ Thanks! We'll get back to you within 2 business days.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Wanderlust Travel. Built with curiosity.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

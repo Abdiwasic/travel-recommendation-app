@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Wanderlust</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header>
+    <nav id="navbar">
+      <a href="index.html" class="logo">Wanderlust</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="search-wrap">
+        <input type="text" id="search-input" placeholder="Search beaches, temples, countries…" />
+        <button id="search-btn" onclick="window.location.href='index.html'">Search</button>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ── ABOUT HERO ── -->
+  <section class="page-hero">
+    <h1>About Us</h1>
+    <p>We are travellers first, and writers second.</p>
+  </section>
+
+  <!-- ── ABOUT CONTENT ── -->
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our story</h2>
+        <p>
+          Wanderlust started in 2019 as a shared Google Doc between three friends trying to plan a trip through Southeast Asia.
+          It quickly became apparent that the internet had no shortage of travel advice — but plenty of it was outdated, sponsored, or just plain wrong.
+        </p>
+        <p>
+          We built Wanderlust to fix that. Every recommendation on this site comes from real visits, honest opinions, and zero paid placements.
+          Our team has collectively visited over 60 countries, and we update our guides whenever we go back — or when the world changes around them.
+        </p>
+        <h2>What we cover</h2>
+        <p>
+          We focus on three categories: <strong>beaches</strong> (from hidden coves to famous shores),
+          <strong>temples</strong> (ancient ruins to living sacred spaces), and <strong>countries</strong>
+          (full destination guides with culture, logistics, and itinerary ideas).
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&auto=format&fit=crop" alt="Team travelling"/>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team-section">
+      <h2>The team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sana&backgroundColor=b6e3f4" alt="Sana"/>
+          <h3>Sana Mirza</h3>
+          <p>Co-founder · South & Southeast Asia specialist</p>
+        </div>
+        <div class="team-card">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Leo&backgroundColor=c0aede" alt="Leo"/>
+          <h3>Leo Ferreira</h3>
+          <p>Co-founder · Latin America & Europe correspondent</p>
+        </div>
+        <div class="team-card">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Amara&backgroundColor=d1d4f9" alt="Amara"/>
+          <h3>Amara Osei</h3>
+          <p>Editor · Africa & Middle East guide writer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Wanderlust Travel. Built with curiosity.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
